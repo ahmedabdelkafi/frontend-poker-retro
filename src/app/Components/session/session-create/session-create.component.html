@@ -1,0 +1,29 @@
+
+<button class="btn btn-light btn-lg"  type="submit" data-bs-toggle="modal" data-bs-target="#myModal">Create Session</button>
+<div *ngIf="showSuccessMessage" class="alert alert-success mt-2" role="alert">
+  Session created successfully.
+</div>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color:black">Le temps de poker planning  </h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" style="color:black">
+        Vous êtes sur le point de démarrer une session de poker planning. Après avoir cliqué sur "Démarrer", vous pourrez partager le lien avec votre équipe afin d'estimer les users stories.
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button  class="btn btn-secondary" data-bs-dismiss="modal" (click)="createSession(newSession)" type="submit" data-dismiss="modal">Démarrer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

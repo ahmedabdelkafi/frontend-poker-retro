@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+// @ts-ignore
 import {SessionComponent} from "./session.component";
 
 
